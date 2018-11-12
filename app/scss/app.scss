@@ -1,0 +1,24 @@
+// Bootstrap
+@import './node_modules/bootstrap/scss/bootstrap';
+@import "core/fonts";
+@import "core/variables";
+//Custom Css
+body{
+  background-color: $white;
+  //background-color: #f6f7f8;
+  font-family: $raleway;
+  padding-top: 90px;
+  height: 100vh;
+  position: relative;
+}
+.card{
+  background-color: #f1f7f7;
+}
+@import "modules/header";
+@import "modules/login-register";
+@import "modules/carousel";
+@import "modules/fees";
+@import "modules/faq";
+@import "modules/about";
+@import "modules/values";
+@import "modules/footer";

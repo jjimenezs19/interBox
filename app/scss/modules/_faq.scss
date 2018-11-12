@@ -1,0 +1,58 @@
+.faq {
+  margin: 20px 0;
+  background-color: #f1f7f7;
+  border: 1px solid #f0f0f0;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  .title-box {
+    background: url("../../img/preguntas-frecuentes.jpg") center no-repeat;
+    background-size: cover;
+    padding: 70px 0;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    .title-text {
+      color: #fff;
+    }
+    .title-box-b {
+      background: $primary-color;
+      opacity: 0.60;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+  .faqs{
+    .card{
+      margin-bottom: 10px;
+      border: none;
+      background-color: #eee;
+      color:#333;
+      .card-header{
+        background-color: $primary-color-2;
+        color:$white;
+        .faq-title{
+          i{
+            font-size: 25px;
+            margin-left: 5px;
+          }
+        }
+        .faq-title[aria-expanded="true"]{
+          i{
+            &:before{
+              content: "\f106";
+            }
+          }
+        }
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .card-title{
+    color:$primary-color-2;
+  }
+
+}

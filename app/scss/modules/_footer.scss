@@ -1,0 +1,27 @@
+footer{
+  background-color: #333;
+  border-top: 5px solid $primary-color;
+  padding: 20px 0;
+  .footer-nav{
+    a{
+      color:$white;
+      font-size: 13px;
+      &:hover{
+        color:$primary-color;
+      }
+    }
+  }
+  .copy{
+    color:$white;
+    font-size: 13px;
+  }
+}
+
+.f-fb footer{
+  @media (min-width:1200px) {
+    position: absolute;
+    bottom:0;
+    right: 0;
+    left:0;
+  }
+}

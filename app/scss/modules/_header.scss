@@ -1,0 +1,28 @@
+header{
+  //background-image: linear-gradient(to right, rgb(250, 175, 24), rgb(206, 115, 49), rgb(144, 68, 52), rgb(74, 35, 38), rgb(0, 0, 0));
+  background-color: #fff;
+  border-bottom:5px solid $primary-color;
+  .sub-header{
+    //background: rgba(255,255,255,0.5);
+    .navbar-brand{
+      .main-logo{
+        max-width: 200px;
+      }
+    }
+    .navbar-nav{
+      li{
+        padding-top: 15px;
+        a{
+          font-weight: 500;
+          color:#333;
+          &.active{
+            color:$primary-color;
+          }
+          &:hover{
+            color:$primary-color;
+          }
+        }
+      }
+    }
+  }
+}
