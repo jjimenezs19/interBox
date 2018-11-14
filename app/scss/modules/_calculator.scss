@@ -1,10 +1,10 @@
-.values {
+.calculator {
+  margin: 20px 0;
   background-color: #f1f7f7;
   border: 1px solid #f0f0f0;
   box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-  margin: 20px 0;
   .title-box {
-    background: url("../img/fondo_valores.jpg") center no-repeat;
+    background: url("../img/calculadora.jpg") center no-repeat;
     background-size: cover;
     padding: 70px 0;
     width: 100%;
@@ -23,18 +23,15 @@
       bottom: 0;
     }
   }
-  .values-box{
-    margin: 10px 0;
+
+  .calculator-box{
+    @media (min-width: 768px) {
+      max-width: 75%;
+    }
     background-color: $white;
   }
-  .card-title{
-    color: $primary-color-2;
-  }
-  .card-title-2{
-    color: $primary-color;
-  }
-  p{
-    text-align: justify;
-    font-size: 14px;
+
+  .title-main{
+    color:$primary-color-2;
   }
 }

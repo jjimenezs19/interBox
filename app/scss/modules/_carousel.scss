@@ -1,7 +1,19 @@
-.carousel-caption{
-  background: rgba(0,0,0,0.6);
-  width: 100%;
-  right: 0;
-  bottom: 0;
-  left: 0;
+.main-banner{
+  background: url("../img/home.jpg") center repeat;
+  padding: 100px 0;
+  position: relative;
+  color:$white;
+  z-index: 5;
+  text-transform: uppercase;
+  //background-size: cover;
+  .sub-back{
+    z-index: -1;
+    background: #00182c;
+    opacity: 0.60;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 }

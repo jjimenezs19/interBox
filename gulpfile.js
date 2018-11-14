@@ -40,6 +40,10 @@ gulp.task('watch', ['browserSync', 'sass'], function (){
     gulp.watch('app/js/**/*.js', browserSync.reload);
 });
 
+gulp.task('prod', ['sass'], function () {
+
+});
+
 gulp.task('unCss', function () {
     return gulp.src('app/css/**/*.css')
         .pipe(uncss({

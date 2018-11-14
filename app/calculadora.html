@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>InterBox Cr</title>
+    <title>InterBox Cr | Calculadora</title>
     <link rel="icon" type="image/png" href="img/favico.png" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link rel="stylesheet" href="css/app.css">
@@ -24,7 +24,7 @@
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item"><a class="nav-link" href="tarifas.html">Tarifas</a></li>
                         <li class="nav-item"><a class="nav-link" href="preguntas.html">Preguntas Frecuentas</a></li>
-                        <li class="nav-item"><a class="nav-link" href="calculadora.html">Calculadora</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="calculadora.html">Calculadora</a></li>
                     </ul>
                     <ul class="navbar-nav justify-content-end">
                         <li class="nav-item"><a class="nav-link" href="register.html">Registrate</a></li>
@@ -35,54 +35,55 @@
         </div>
     </div>
 </header>
-<div class="banner">
-    <div class="main-banner text-center">
-        <div class="sub-back"></div>
-        <div class="container">
-            <h1>Bienvenido a International Box CR</h1>
-            <h5>Transporte de cargas simple, veloz y económico</h5>
+<div class="container">
+    <section class="calculator">
+        <div class="title-box">
+            <div class="title-box-b"></div>
+            <h3 class="title-text"></h3>
         </div>
-    </div>
-</div>
-<section class="services py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-6 col-sm-6 col-md-3 mb-2 mb-md-0">
-                <div class="card text-center service-card">
-                    <div class="card-body">
-                        <i class="fas fa-plane"></i>
-                        <p class="service-text">Despacho aereo diario de USA  a Costa Rica</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-sm-6 col-md-3 mb-2 mb-md-0">
-                <div class="card text-center service-card">
-                    <div class="card-body">
-                        <i class="fas fa-shield-alt"></i>
-                        <p class="service-text">Todas tus compras con nosotros viajan aseguradas</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-sm-6 col-md-3 mb-2 mb-md-0">
-                <div class="card text-center service-card">
-                    <div class="card-body">
-                        <i class="fas fa-people-carry"></i>
-                        <p class="service-text">Entregamos en la puerta de tu casa u oficina</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-sm-6 col-md-3 mb-2 mb-md-0">
-                <div class="card text-center service-card">
-                    <div class="card-body">
-                        <i class="fas fa-hand-holding-usd"></i>
-                        <p class="service-text">Te ofrecemos la mejor tarifa del mercado</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        <div class="card">
+            <div class="card-body">
 
+                <h1 class="card-title title-main">Calculadora</h1>
+                <p>
+                    El total a mostrar es un apróximado de los cargos por traer tu compra. Esta misma está sujeta a cambios y tramites adicionales
+                    (manejo especial, materiales peligrosos, permisos de importación). Cualquier consulta no dudes escribirnos a <a href="mailto:info@interboxcr.com">info@interboxcr.com</a>
+                </p>
+
+                <div class="card calculator-box mx-auto">
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Producto: </label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputEmail3" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Peso</label>
+                            <div class="col-sm-10">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="peso1" value="option1">
+                                    <label class="form-check-label" for="peso1">LBS</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="peso2" value="option2">
+                                    <label class="form-check-label" for="peso2">KLS</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Valor: </label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputPassword3" placeholder="">
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-warning text-white">Calcular</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 <footer class="">
     <div class="container">
         <div class="row">
