@@ -47,7 +47,7 @@ gulp.task('prod', ['sass'], function () {
 gulp.task('unCss', function () {
     return gulp.src('app/css/**/*.css')
         .pipe(uncss({
-            html: ['http://localhost:3000/']
+            html: ['http://localhost:3000/', 'app/*.html']
         }))
         .pipe(gulp.dest('app/css'))
 });
